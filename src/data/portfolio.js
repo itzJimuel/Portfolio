@@ -41,9 +41,8 @@ const GITHUB = 'https://github.com/itzJimuel';
 
 /* ─── Site / SEO ──────────────────────────────────────────────────────── */
 export const site = {
-  // TODO: the public URL of your deployed site (needed for social previews),
-  // e.g. "https://jimuel-amuto.vercel.app" or "https://itzjimuel.github.io/portfolio".
-  url: 'https://example.com',
+  // The public URL of the deployed site (used for social previews and SEO).
+  url: 'https://jimuel-amuto.vercel.app',
   title: 'Jimuel Amuto — Front-End Developer',
   description:
     'Jimuel Amuto is a front-end developer and IT student from Butuan City, Philippines, building clean, responsive web and mobile interfaces with React, Next.js and Flutter.',
