@@ -173,7 +173,7 @@ export const projects = [
       'A phone-friendly church management system for Door of Hope Assembly of God: member records, QR-code check-in, automatic attendance status, role-based access and a pastor’s dashboard that flags who needs a follow-up.',
     tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
     image: 'images/projects/door-of-hope.webp',
-    imageAlt: 'Door of Hope ChMS sign-in screen on desktop and mobile',
+    imageAlt: 'Door of Hope ChMS dashboard with member status counts and a weekly attendance chart, in front of the members list',
     github: `${GITHUB}/Door-of-Hope-ChMS`,
     demo: 'https://doorofhopechms.vercel.app',
     demoLabel: 'Live site',
