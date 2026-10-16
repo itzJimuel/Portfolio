@@ -203,7 +203,7 @@ export const projects = [
   {
     name: 'Flutter UI Components',
     description:
-      'A set of reusable Flutter widgets: scaffold layouts with app bars, tabs, side drawers, floating action buttons and bottom navigation.',
+      'A Flutter Scaffold demo exploring core Material UI components: tabs, side drawers, a bottom sheet, snackbars with undo, an extended FAB and bottom navigation.',
     tech: ['Flutter', 'Dart'],
     image: 'images/projects/flutter-ui-components.webp',
     imageAlt: 'Three Flutter app screens showing tabs, a floating action button and a side drawer',
