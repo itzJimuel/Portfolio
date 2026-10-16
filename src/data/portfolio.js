@@ -62,7 +62,7 @@ export const profile = {
   // Short status badge in the hero. Set to null to hide it.
   availability: 'Open to internships & junior front-end roles',
   email: 'jimuelamuto@gmail.com',
-  resume: 'resume.pdf', // TODO: review public/resume.pdf (a draft built from this file) or replace it
+  resume: 'resume.pdf', // public/resume.pdf — replace the file to update it
   photo: {
     src: 'images/profile.webp', // from your GitHub avatar; a larger photo (~800×1000) will look sharper
     alt: 'Portrait of Jimuel Amuto',
@@ -226,10 +226,10 @@ export const experience = [];
 
 export const education = [
   {
-    title: 'BS Information Technology', // TODO: confirm the exact degree name
+    title: 'BS Information Technology',
     org: 'Caraga State University – Cabadbaran Campus',
     location: 'Cabadbaran City',
-    period: '2023 — Present', // TODO: confirm your start year
+    period: '2023 — Present',
     description: 'Fourth-year student focusing on web design, front-end development and machine learning.',
     highlights: [
       'IT 120 final project: a Flutter app that recognizes car brands with an on-device ML model',
