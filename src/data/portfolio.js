@@ -186,7 +186,7 @@ export const projects = [
     tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
     image: 'images/projects/boardinghub.webp',
     imageAlt: 'BoardingHub home page with a boarding house search bar',
-    github: `${GITHUB}/ReadyFinalChecking`,
+    github: `${GITHUB}/BoardingHub`,
     demo: null,
   },
   {
