@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      Theme: follow the system light/dark preference by default.
+      This tiny blocking script applies a saved manual choice before the first
+      paint so the page never flashes the wrong theme. Keep it inline and small.
+    -->
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.dataset.theme = saved;
+          document.querySelector('meta[name="color-scheme"]').content = saved;
+        }
+      } catch (e) {
+        /* Storage blocked: just follow the system preference. */
+      }
+    </script>
+    <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)" />
+
+    <!--
+      SEO + social previews. The %%SITE_*%% placeholders are filled in from
+      src/data/portfolio.js by a small plugin in vite.config.js — edit them there.
+    -->
+    <title>%%SITE_TITLE%%</title>
+    <meta name="description" content="%%SITE_DESCRIPTION%%" />
+    <meta name="author" content="%%SITE_AUTHOR%%" />
+    <link rel="canonical" href="%%SITE_URL%%" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="%%SITE_AUTHOR%%" />
+    <meta property="og:locale" content="%%SITE_LOCALE%%" />
+    <meta property="og:url" content="%%SITE_URL%%" />
+    <meta property="og:title" content="%%SITE_TITLE%%" />
+    <meta property="og:description" content="%%SITE_DESCRIPTION%%" />
+    <meta property="og:image" content="%%SITE_OG_IMAGE%%" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="%%SITE_OG_IMAGE_ALT%%" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="%%SITE_TITLE%%" />
+    <meta name="twitter:description" content="%%SITE_DESCRIPTION%%" />
+    <meta name="twitter:image" content="%%SITE_OG_IMAGE%%" />
+    <meta name="twitter:image:alt" content="%%SITE_OG_IMAGE_ALT%%" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="padding: 2rem; font-family: system-ui, sans-serif">
+        This portfolio needs JavaScript to display. Please enable it and reload the page.
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
